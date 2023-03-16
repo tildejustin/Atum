@@ -6,12 +6,13 @@
   "mixins": [
   ],
   "client": [
+    "ControlsOptionsScreenMixin",
     "CreateWorldScreenMixin",
     "DebugHudMixin",
     "LoadingScreenRendererMixin",
-    "TitleScreenMixin",
-    "SettingsScreenMixin",
     "ServerPlayerEntityMixin",
+    "SettingsScreenMixin",
+    "TitleScreenMixin",
     "hotkey.ClientPlayerNetworkHandlerMixin",
     "hotkey.GameOptionsMixin",
     "hotkey.KeyboardMixin",
