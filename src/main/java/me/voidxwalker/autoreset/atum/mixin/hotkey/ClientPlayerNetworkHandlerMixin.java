@@ -1,13 +1,12 @@
-package xyz.tildejustin.atum.mixin.hotkey;
+package me.voidxwalker.autoreset.atum.mixin.hotkey;
 
+import me.voidxwalker.autoreset.atum.Atum;
 import net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket;
-import net.minecraft.network.packet.c2s.play.PlayerPositionLookC2SPacket;
 import net.minecraft.server.ServerPacketListener;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import xyz.tildejustin.atum.Atum;
 
 @Mixin(ServerPacketListener.class)
 public class ClientPlayerNetworkHandlerMixin {

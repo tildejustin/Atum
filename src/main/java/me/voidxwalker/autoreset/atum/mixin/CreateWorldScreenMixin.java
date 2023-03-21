@@ -1,5 +1,6 @@
-package xyz.tildejustin.atum.mixin;
+package me.voidxwalker.autoreset.atum.mixin;
 
+import me.voidxwalker.autoreset.atum.Atum;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.world.CreateWorldScreen;
 import net.minecraft.client.gui.widget.TextFieldWidget;
@@ -12,7 +13,6 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import xyz.tildejustin.atum.Atum;
 
 import java.util.Random;
 

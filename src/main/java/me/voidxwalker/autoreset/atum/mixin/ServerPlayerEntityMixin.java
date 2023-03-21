@@ -1,12 +1,12 @@
-package xyz.tildejustin.atum.mixin;
+package me.voidxwalker.autoreset.atum.mixin;
 
 
+import me.voidxwalker.autoreset.atum.Atum;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import xyz.tildejustin.atum.Atum;
 
 @Mixin(ServerPlayerEntity.class)
 public class ServerPlayerEntityMixin {

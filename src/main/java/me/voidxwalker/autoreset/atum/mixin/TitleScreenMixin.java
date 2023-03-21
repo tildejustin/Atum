@@ -1,20 +1,17 @@
-package xyz.tildejustin.atum.mixin;
+package me.voidxwalker.autoreset.atum.mixin;
 
 
+import me.voidxwalker.autoreset.atum.Atum;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.TitleScreen;
 import net.minecraft.client.gui.screen.world.CreateWorldScreen;
 import net.minecraft.client.gui.widget.ButtonWidget;
-import net.minecraft.client.render.item.ItemRenderer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import xyz.tildejustin.atum.Atum;
-import xyz.tildejustin.atum.screen.AutoResetOptionScreen;
+import me.voidxwalker.autoreset.atum.screen.AutoResetOptionScreen;
 
 
 @Mixin(TitleScreen.class)
@@ -22,6 +19,7 @@ public abstract class TitleScreenMixin extends Screen {
     private String difficulty;
 
 
+    @SuppressWarnings("unchecked")
     @Inject(method = "init", at = @At("TAIL"))
     private void init(CallbackInfo info) {
         if (Atum.isRunning && Atum.loopPrevent2) {

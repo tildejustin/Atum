@@ -1,4 +1,4 @@
-package xyz.tildejustin.atum.mixin;
+package me.voidxwalker.autoreset.atum.mixin;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.Screen;

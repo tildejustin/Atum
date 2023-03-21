@@ -1,8 +1,9 @@
-package xyz.tildejustin.atum;
+package me.voidxwalker.autoreset.atum;
 
 
         import net.minecraft.client.option.KeyBinding;
 
+        import java.util.ArrayList;
         import java.util.Arrays;
         import java.util.List;
 
@@ -19,7 +20,7 @@ public final class KeyBindingHelper {
     }
 
     public static KeyBinding[] process(KeyBinding[] allKeys) {
-        List<KeyBinding> newAllKeys = new java.util.ArrayList<>(Arrays.stream(allKeys).toList());
+        List<KeyBinding> newAllKeys = new ArrayList<>(Arrays.asList(allKeys));
         newAllKeys.removeAll(moddedKeyBindings);
         newAllKeys.addAll(moddedKeyBindings);
         return newAllKeys.toArray(new KeyBinding[0]);

@@ -1,6 +1,7 @@
-package xyz.tildejustin.atum.screen;
+package me.voidxwalker.autoreset.atum.screen;
 
 
+import me.voidxwalker.autoreset.atum.Atum;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
@@ -8,7 +9,6 @@ import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.util.Language;
 import net.minecraft.world.level.LevelGeneratorType;
 import org.jetbrains.annotations.Nullable;
-import xyz.tildejustin.atum.Atum;
 
 
 public class AutoResetOptionScreen extends Screen {
@@ -27,6 +27,7 @@ public class AutoResetOptionScreen extends Screen {
         this.parent = parent;
     }
 
+    @SuppressWarnings("unchecked")
     public void init() {
 
         this.isHardcore = Atum.difficulty == -1;

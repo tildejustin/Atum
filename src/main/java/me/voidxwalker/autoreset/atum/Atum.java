@@ -1,4 +1,4 @@
-package xyz.tildejustin.atum;
+package me.voidxwalker.autoreset.atum;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.client.Minecraft;
