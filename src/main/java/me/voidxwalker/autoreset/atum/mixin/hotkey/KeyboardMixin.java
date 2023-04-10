@@ -19,7 +19,7 @@ public class KeyboardMixin {
     public Screen currentScreen;
     long atum_lastHeld = 0;
 
-    @Inject(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/profiler/Profiler;swap(Ljava/lang/String;)V", ordinal = 5))
+    @Inject(method = "runGameLoop", at = @At(value = "INVOKE", target = "Lnet/minecraft/util/profiler/Profiler;push(Ljava/lang/String;)V", ordinal = 4, shift = At.Shift.AFTER))
     public void atum_onKey(CallbackInfo ci) {
         if (System.currentTimeMillis() - atum_lastHeld > 1000) {
             Atum.hotkeyHeld = false;
